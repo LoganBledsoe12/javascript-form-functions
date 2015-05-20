@@ -69,12 +69,23 @@ function join (a, b){
 function countLetters(b){
 	var letterCount={};
 
-	for(var i=0; i<b.length ; i++){
-		var letter=b[i]
-		letterCount[i]=letterCount[i]+1
-		
+	for(var i=0; i<inputstring.length ; i++){
+		var currentLetter = inputString.charat(i);
+		letterCount[currentLetter]= 1;
+	}
+	if(!letterCount.hasOwnProperty(urrentLetter)){
+		lettercount[currentLetter] =1;
+	}	
+	else{
+		lettercount[currentLetter]++;
+	}
+	var outputString = '';
+
+	for(var propertyname in letterCount) {
+		outputString = outputString + propertyname + ':' + value + ', '
 	}
 
+	return outputString;
 
 }
 
