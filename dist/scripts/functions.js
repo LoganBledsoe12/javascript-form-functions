@@ -66,7 +66,17 @@ function nSum (num){
 function join (a, b){
 	return a.join(b);
 }
+function countLetters(b){
+	var letterCount={};
 
+	for(var i=0; i<b.length ; i++){
+		var letter=b[i]
+		letterCount[i]=letterCount[i]+1
+		
+	}
+
+
+}
 
 
 
