@@ -45,6 +45,7 @@ function startsWith (apple){
 	if (apple[0]=== 'e' || apple[0]=== 'E'){
 		return ('starts with E');
 	}
+	return 'starts with something else';
 }
 
 function stringRepeat (pie, num){
@@ -69,23 +70,22 @@ function join (a, b){
 function countLetters(b){
 	var letterCount={};
 
-	for(var i=0; i<inputstring.length ; i++){
-		var currentLetter = inputString.charat(i);
-		letterCount[currentLetter]= 1;
-	}
-	if(!letterCount.hasOwnProperty(urrentLetter)){
-		lettercount[currentLetter] =1;
+	for(var i=0; i<b.length ; i++){
+		var currentLetter = b.charAt(i);
+	
+		if(!letterCount.hasOwnProperty(currentLetter)){
+		letterCount[currentLetter] =1;
 	}	
-	else{
-		lettercount[currentLetter]++;
-	}
-	var outputString = '';
-
-	for(var propertyname in letterCount) {
-		outputString = outputString + propertyname + ':' + value + ', '
+		else{
+			letterCount[currentLetter]++;
 	}
 
-	return outputString;
+
+
+
+	}
+
+	return JSON.stringify (letterCount);
 
 }
 
